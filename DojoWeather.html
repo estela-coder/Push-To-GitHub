@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="DojoWeather.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div>
+            <h1>Dojo Weather</h1>
+        </div>
+        <div>
+            <a href="#" onclick="navAlert(this)">Burbank</a>
+            <a href="#" onclick="navAlert(this)">Chicago</a>
+            <a href="#" onclick="navAlert(this)">Dallas</a>
+        </div>
+    </div>
+    <div class="mother-container">
+        <div class="second-nav">
+            <h2>San Jose</h2>
+            <div class="choose-category">
+                <p>show temperature in</p>
+                <select name="Temperature" id="temperature" onchange="tempConversion(this)">
+                    <option value="celcius" id="celcius">°C</option>
+                    <option value="fahrenheit" id="fahrenheit">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="weather-containers">
+            <div class="today">
+                <h3>Today</h3>
+                <img src="./Images/some_rain.png" alt="rainy">
+                <p>some rain</p>
+                <div class="degrees">
+                    <h4 class="heigh-temp">24&deg</h4>
+                    <h4 class="low-temp">18&deg</h4>
+                </div>
+            </div>
+            <div class="tomorrow">
+                <h3>Tomorrow</h3>
+                <img src="./Images/some_sun.png" alt="sunny">
+                <p>some sun</p>
+                <div class="degrees">
+                    <h4 class="heigh-temp">27&deg</h4>
+                    <h4 class="low-temp">19&deg</h4>
+                </div>
+            </div>
+            <div class="friday">
+                <h3>Friday</h3>
+                <img src="./Images/some_clouds.png" alt="cloudy">
+                <p>some clouds</p>
+                <div class="degrees">
+                    <h4 class="heigh-temp">21&deg</h4>
+                    <h4 class="low-temp">16&deg</h4>
+                </div>
+            </div>
+            <div class="saturday">
+                <h3>Saturday</h3>
+                <img src="./Images/some_sun.png" alt="suny">
+                <p>some sun</p>
+                <div class="degrees">
+                    <h4 class="heigh-temp">26&deg</h4>
+                    <h4 class="low-temp">21&deg</h4>
+                </div>
+            </div>
+        </div>
+        <div id="popup-cookie">
+            <div class="cookie" id="cookie">
+                <img src="./Images/cookie.png" alt="cookie">
+                <div>
+                    <p class="stop-cookie">Stop! Cookie time</p>
+                    <p class="cookie-desc">We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+                </div>
+                <button class="accept-cookies" id="accept-popup" >I Accept</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./DojoWeather.js"></script>
+</body>
+</html>
